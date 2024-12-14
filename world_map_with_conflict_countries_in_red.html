@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a49b6e26036236ea84271c89a060a336 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a49b6e26036236ea84271c89a060a336" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a49b6e26036236ea84271c89a060a336 = L.map(
+                "map_a49b6e26036236ea84271c89a060a336",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9fcf41ae436c6f457e787720be8208a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f9fcf41ae436c6f457e787720be8208a.addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var marker_b334b09a8e67d18f6d535932663533f9 = L.marker(
+                [5.1521, 46.1996],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_4608160f50d5002197523f2b7e345b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b334b09a8e67d18f6d535932663533f9.setIcon(icon_4608160f50d5002197523f2b7e345b97);
+        
+    
+        var popup_89042af9ee2c2bd835978d1dc4528cd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b56c8891a59bfd86d36e661b4a892c06 = $(`<div id="html_b56c8891a59bfd86d36e661b4a892c06" style="width: 100.0%; height: 100.0%;">                 <b>Somalia</b><br>                              1991년 소말리아의 바레 군사 정권이 붕괴된 이후, 중앙 정부가 무너지고 소말리아는 무정부 상태로 빠져             군벌들 간의 권력 다툼과 지역적 충돌이 심화되었습니다. 내전으로 인해 병원 건물이 파괴되고, 의료 인력들이             해외로 이주해 남아있는 인력은 매우 부족해졌습니다. 특히 남부 지역은 더욱 심각한 의료적 어려움을 겪고             있으며, 소말리아는 현재까지도 정치적 불안정과 지속적인 폭력을 겪고 있습니다.         <br>                 <img src="file:///C:/Users/채민성/Documents/somalia.jpg" width="300" height="200" />             </div>`)[0];
+                popup_89042af9ee2c2bd835978d1dc4528cd2.setContent(html_b56c8891a59bfd86d36e661b4a892c06);
+            
+        
+
+        marker_b334b09a8e67d18f6d535932663533f9.bindPopup(popup_89042af9ee2c2bd835978d1dc4528cd2)
+        ;
+
+        
+    
+    
+            var marker_59b63bcf6290a806bd7d64032393ce74 = L.marker(
+                [6.8694, 31.3019],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_01d432492f49a9134fc1046151b149af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59b63bcf6290a806bd7d64032393ce74.setIcon(icon_01d432492f49a9134fc1046151b149af);
+        
+    
+        var popup_cf961f3b42946f19c54620d505604246 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b207e93ecbee105d23ff96e39a369f = $(`<div id="html_05b207e93ecbee105d23ff96e39a369f" style="width: 100.0%; height: 100.0%;">                 <b>South Sudan</b><br>                 South Sudan has been affected by civil war since its independence.<br>                 <img src="https://example.com/south_sudan_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_cf961f3b42946f19c54620d505604246.setContent(html_05b207e93ecbee105d23ff96e39a369f);
+            
+        
+
+        marker_59b63bcf6290a806bd7d64032393ce74.bindPopup(popup_cf961f3b42946f19c54620d505604246)
+        ;
+
+        
+    
+    
+            var marker_ef1d68d1f84d143d03a301b046306749 = L.marker(
+                [12.8628, 30.8025],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_a4aa51135521c05392568850ff932808 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ef1d68d1f84d143d03a301b046306749.setIcon(icon_a4aa51135521c05392568850ff932808);
+        
+    
+        var popup_33c4a8ee064411997970a53e2566bf31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42392dd4b124e95805d021228d1a8c8e = $(`<div id="html_42392dd4b124e95805d021228d1a8c8e" style="width: 100.0%; height: 100.0%;">                 <b>Sudan</b><br>                 Sudan is currently undergoing a political and humanitarian crisis.<br>                 <img src="https://example.com/sudan_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_33c4a8ee064411997970a53e2566bf31.setContent(html_42392dd4b124e95805d021228d1a8c8e);
+            
+        
+
+        marker_ef1d68d1f84d143d03a301b046306749.bindPopup(popup_33c4a8ee064411997970a53e2566bf31)
+        ;
+
+        
+    
+    
+            var marker_c72323ee63ebb6847d35979ae77dfbe8 = L.marker(
+                [9.145, 40.4897],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_69e2531ba1d2e485384fac9d5cf676a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c72323ee63ebb6847d35979ae77dfbe8.setIcon(icon_69e2531ba1d2e485384fac9d5cf676a2);
+        
+    
+        var popup_79d749ebdef0b42134c776fe5d7dabaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7eff960034b3abe4a2f0b04c773cdc9 = $(`<div id="html_a7eff960034b3abe4a2f0b04c773cdc9" style="width: 100.0%; height: 100.0%;">                 <b>Ethiopia</b><br>                 Ethiopia is dealing with internal conflict, particularly in the Tigray region.<br>                 <img src="https://example.com/ethiopia_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_79d749ebdef0b42134c776fe5d7dabaa.setContent(html_a7eff960034b3abe4a2f0b04c773cdc9);
+            
+        
+
+        marker_c72323ee63ebb6847d35979ae77dfbe8.bindPopup(popup_79d749ebdef0b42134c776fe5d7dabaa)
+        ;
+
+        
+    
+    
+            var marker_f2fa6f06b2bd85ac4a66f580e6e73541 = L.marker(
+                [31.0461, 34.8516],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_cb722fa92857077c42f8c12fb858bc05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f2fa6f06b2bd85ac4a66f580e6e73541.setIcon(icon_cb722fa92857077c42f8c12fb858bc05);
+        
+    
+        var popup_c827d51e45e85d10cd9a5b9bd309a59d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_accce32b13154661a57ebe060384ec88 = $(`<div id="html_accce32b13154661a57ebe060384ec88" style="width: 100.0%; height: 100.0%;">                 <b>Israel</b><br>                 Israel is involved in ongoing political and military conflicts.<br>                 <img src="https://example.com/israel_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_c827d51e45e85d10cd9a5b9bd309a59d.setContent(html_accce32b13154661a57ebe060384ec88);
+            
+        
+
+        marker_f2fa6f06b2bd85ac4a66f580e6e73541.bindPopup(popup_c827d51e45e85d10cd9a5b9bd309a59d)
+        ;
+
+        
+    
+    
+            var marker_32f68415e01740005ebc718be3203ebf = L.marker(
+                [26.3351, 17.2283],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_34c3f37b151789e2582d34a9bcbc7372 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32f68415e01740005ebc718be3203ebf.setIcon(icon_34c3f37b151789e2582d34a9bcbc7372);
+        
+    
+        var popup_0043087d8b04f8f585fd3c5c62a4c6bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fd9b338d3af64e76862d911a00acfe2 = $(`<div id="html_9fd9b338d3af64e76862d911a00acfe2" style="width: 100.0%; height: 100.0%;">                 <b>Libya</b><br>                 Libya is in a state of civil conflict and political instability.<br>                 <img src="https://example.com/libya_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_0043087d8b04f8f585fd3c5c62a4c6bd.setContent(html_9fd9b338d3af64e76862d911a00acfe2);
+            
+        
+
+        marker_32f68415e01740005ebc718be3203ebf.bindPopup(popup_0043087d8b04f8f585fd3c5c62a4c6bd)
+        ;
+
+        
+    
+    
+            var marker_60f86128edcf8d3555c130c845e013bb = L.marker(
+                [15.1794, 39.7823],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_bd64a75a9aab597f32683c9e4c7f9126 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60f86128edcf8d3555c130c845e013bb.setIcon(icon_bd64a75a9aab597f32683c9e4c7f9126);
+        
+    
+        var popup_9da69b86ed9623789695706d08f414fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61ee455ff3792d65dbfaa607edc14c59 = $(`<div id="html_61ee455ff3792d65dbfaa607edc14c59" style="width: 100.0%; height: 100.0%;">                 <b>Eritrea</b><br>                 Eritrea faces political and military conflict with neighboring countries.<br>                 <img src="https://example.com/eritrea_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_9da69b86ed9623789695706d08f414fb.setContent(html_61ee455ff3792d65dbfaa607edc14c59);
+            
+        
+
+        marker_60f86128edcf8d3555c130c845e013bb.bindPopup(popup_9da69b86ed9623789695706d08f414fb)
+        ;
+
+        
+    
+    
+            var marker_8756e4d17ca6a26ccc3ae6f655a5c3ef = L.marker(
+                [6.6111, 20.9394],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_05978b7c75c6756343f512831bc9de0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8756e4d17ca6a26ccc3ae6f655a5c3ef.setIcon(icon_05978b7c75c6756343f512831bc9de0b);
+        
+    
+        var popup_b1f82ae878a8168f26f26f8f8ee5bcd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c224fffe9cdeda4e99302a6ef1ab7041 = $(`<div id="html_c224fffe9cdeda4e99302a6ef1ab7041" style="width: 100.0%; height: 100.0%;">                 <b>Central African Republic</b><br>                 The Central African Republic is in the midst of ongoing civil war.<br>                 <img src="https://example.com/central_african_republic_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_b1f82ae878a8168f26f26f8f8ee5bcd4.setContent(html_c224fffe9cdeda4e99302a6ef1ab7041);
+            
+        
+
+        marker_8756e4d17ca6a26ccc3ae6f655a5c3ef.bindPopup(popup_b1f82ae878a8168f26f26f8f8ee5bcd4)
+        ;
+
+        
+    
+    
+            var marker_4e829d914aea9138e594a96122319ade = L.marker(
+                [-18.6657, 35.5296],
+                {
+}
+            ).addTo(map_a49b6e26036236ea84271c89a060a336);
+        
+    
+            var icon_829d2b336817a5ab83bee206c75d90dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4e829d914aea9138e594a96122319ade.setIcon(icon_829d2b336817a5ab83bee206c75d90dc);
+        
+    
+        var popup_5ce5723f18797d954decf5cccb543b79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b30ab0c959991118a161442ac5fc1383 = $(`<div id="html_b30ab0c959991118a161442ac5fc1383" style="width: 100.0%; height: 100.0%;">                 <b>Mozambique</b><br>                 Mozambique faces conflict, particularly in the northern region.<br>                 <img src="https://example.com/mozambique_image.jpg" width="300" height="200" />             </div>`)[0];
+                popup_5ce5723f18797d954decf5cccb543b79.setContent(html_b30ab0c959991118a161442ac5fc1383);
+            
+        
+
+        marker_4e829d914aea9138e594a96122319ade.bindPopup(popup_5ce5723f18797d954decf5cccb543b79)
+        ;
+
+        
+    
+</script>
+</html>
